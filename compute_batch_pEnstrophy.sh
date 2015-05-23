@@ -18,7 +18,7 @@ do
         FILE=${LINE_TEXT[0]}
 
         # Compute p-enstrophy on each file and output the file name and resulting enstrophy value in a file.
-        STROUT="$($CUR_DIR/pWeghtedEnstrophyTakashiFiles $FLOAT_DIR/$FILE $P)"
+        STROUT="$($CUR_DIR/pWeightedEnstrophyTakashiFiles $FLOAT_DIR/$FILE $P)"
         echo $FILE $STROUT >> ./enstrophy_calc.txt
 
 done
