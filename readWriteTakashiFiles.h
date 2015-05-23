@@ -122,8 +122,8 @@ std::pair< std::vector<unsigned> , std::vector<float> > readFile( const char* fi
      if ( normalize )
      {
          //first find min and max of this slice
-         double minInThisSlice = INT_MAX;
-         double maxInThisSlice = -INT_MAX;
+         float minInThisSlice = INT_MAX;
+         float maxInThisSlice = -INT_MAX;
          for ( size_t i = 0 ; i != data.size() ; ++i )
          {
              if ( data[i] < minInThisSlice ){minInThisSlice = data[i];}

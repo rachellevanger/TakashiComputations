@@ -27,7 +27,7 @@ float pWeightedEnstrophy( char* filename, float p )
     //convert Takashi file into a bitmap:
     std::pair< std::vector<unsigned> , std::vector<float> > fileParameters = readFile( (char*)filename );
 
-    float p_sum = 0;
+    double p_sum = 0;
 
     //sum the p-th powers of values of the bitmap values
     for( int i=0; i!= fileParameters.second.size(); i++ )
